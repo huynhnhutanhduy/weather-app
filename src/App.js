@@ -88,7 +88,9 @@ function App() {
             <div className="weather-header">
               <div className="weather-first">
                 <div className="weather-location">
-                  <h3>{data.name}</h3>
+                  <h3>
+                    {data.name}, {data.sys.country}
+                  </h3>
                 </div>
                 <div className="weather-date">
                   {new Date(data.dt * 1000).toDateString() +
